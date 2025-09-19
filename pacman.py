@@ -74,6 +74,12 @@ ghosts = [
     [vector(-180, -160), vector(0, 10)],
     [vector(100, 160), vector(0, -10)],
     [vector(100, -160), vector(-10, 0)],
+
+    # Fantasmas extra
+    [vector(0, 160), vector(10, 0)],
+    [vector(0, -160), vector(0, 10)],
+    [vector(-100, 80), vector(0, -10)],
+    [vector(120, -80), vector(-10, 0)],
 ]
 # fmt: off
 tiles = [
