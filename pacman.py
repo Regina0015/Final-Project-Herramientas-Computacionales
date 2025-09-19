@@ -2,30 +2,26 @@ import pygame
 import sys
 
 def pantalla_inicio():
-    # Inicializar Pygame
+    # Inicializar Pygame, la libreria descrita en la propuesta
+
     pygame.init()
 
-    # Configuración de pantalla
+    # Pantalla principal
     ANCHO, ALTO = 600, 400
     pantalla = pygame.display.set_mode((ANCHO, ALTO))
     pygame.display.set_caption("Pac-Man - Pantalla de Inicio")
 
-    # Colores
     NEGRO = (0, 0, 0)
     AMARILLO = (255, 255, 0)
     BLANCO = (255, 255, 255)
 
-    # Fuentes
     titulo_fuente = pygame.font.SysFont("comicsansms", 60, bold=True)
     boton_fuente = pygame.font.SysFont("arial", 30, bold=True)
 
-    # Texto
     titulo = titulo_fuente.render("PAC-MAN", True, AMARILLO)
     instrucciones = boton_fuente.render("Presiona ESPACIO para jugar", True, BLANCO)
-
-    # Variables para animación
+    # Imágenes en este caso pacman para ser mas visual
     pacman_radio = 40
-    # ⬇️ Bajamos más al Pac-Man (antes estaba en ALTO//2 - 50)
     pacman_pos = (ANCHO // 2, ALTO // 2 + 10)
 
     clock = pygame.time.Clock()
@@ -51,25 +47,18 @@ def pantalla_inicio():
                 sys.exit()
             if evento.type == pygame.KEYDOWN:
                 if evento.key == pygame.K_SPACE:
-                    return  # Sale de la pantalla de inicio
+                    return 
 
-        # Dibujar título (arriba)
         pantalla.blit(titulo, (ANCHO//2 - titulo.get_width()//2, 40))
 
-        # Dibujar Pac-Man (más abajo)
         dibujar_pacman(pacman_pos)
-
-        # Dibujar instrucciones
         pantalla.blit(instrucciones, (ANCHO//2 - instrucciones.get_width()//2, ALTO - 70))
-
-        # Actualizar pantalla
         pygame.display.flip()
         clock.tick(30)
 
-#Empezar con la pantalla
+#Empezar con la pantalla 
 pantalla_inicio()
-
-
+#Juego orginal de pacman a modificar
 from random import choice
 from turtle import *
 
