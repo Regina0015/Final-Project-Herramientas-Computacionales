@@ -7,3 +7,5 @@ Tendrá pantalla de inicio con menú Start, Opciones, Instrucciones, Créditos, 
 Objetivo: comer todos los puntos del mapa sin que te atrapen los fantasmas.  
 Audiencia:todas las edades y personas, la interfaz del menú principal será intuitivo y te va a mostrar una leyenda con las teclas para empezar a jugar  
 Plataforma/tecnología: Python (Pygame o Turtle + freegames.pacman) comenzamos con Pygame por facilidad del menú.  
+
+[Evidencia Final Herramientas Computacionales .pdf](https://github.com/user-attachments/files/22438409/Evidencia.Final.Herramientas.Computacionales.pdf)
